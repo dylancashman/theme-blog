@@ -27,7 +27,7 @@
           :to="link.to"
           class="ml-0 hidden-sm-and-down"
           flat
-          @click="onClick($event, item)"
+          @click="onClick($event, link)"
         >
           {{ link.text }}
         </v-btn>
@@ -59,9 +59,11 @@
     methods: {
       ...mapMutations(['toggleDrawer']),
       onClick (e, item) {
+        console.log("CLICKED ON LINK WITH ITEM ", item)
         e.stopPropagation()
-
+        console.log('stopped propagation')
         if (item.to || !item.href) return
+        console.log('should be going to ', item.href)
 
         this.$vuetify.goTo(item.href)
       }

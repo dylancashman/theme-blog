@@ -7,7 +7,7 @@
       :height="value.prominent ? 450 : 350"
       color="grey lighten-1"
       dark
-      href="#!"
+      :href="'/' + value.article_link"
     >
       <v-img
         :src="require(`@/assets/articles/${value.hero}`)"

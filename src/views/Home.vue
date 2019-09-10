@@ -6,9 +6,11 @@
 
     <about />
 
-    <subscribe />
+    <teaching />
 
     <social />
+
+
   </div>
 </template>
 
@@ -21,7 +23,8 @@
       Articles: () => import('@/components/home/Articles'),
       Banner: () => import('@/components/home/Banner'),
       Social: () => import('@/components/home/Social'),
-      Subscribe: () => import('@/components/home/Subscribe')
+      Subscribe: () => import('@/components/home/Subscribe'),
+      Teaching: () => import('@/components/home/Teaching')
     }
   }
 </script>

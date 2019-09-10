@@ -1,23 +1,23 @@
 <template>
   <v-container
-    id="about"
+    id="teaching"
     tag="section"
   >
     <vue-markdown>
-      {{about_text}}
+      {{teaching_text}}
     </vue-markdown>
   </v-container>
 </template>
 
 <script>
   import VueMarkdown from 'vue-markdown';
-  import about_text from '../../../public/static/about.md';
+  import teaching_text from '../../../public/static/teaching.md';
 
   export default {
-    name: 'About',
+    name: 'Teaching',
     data: () => {
       return {
-        about_text: about_text
+        teaching_text: teaching_text
       }
     },
     components: {

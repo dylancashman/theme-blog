@@ -6,6 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     articles: require('@/data/articles.json'),
+    publications: [],
+    news: [],
     drawer: false,
     items: [
       {
@@ -15,6 +17,10 @@ export default new Vuex.Store({
       {
         text: 'About',
         href: '#about'
+      },
+      {
+        text: 'Teaching',
+        href: '#teaching'
       }
     ]
   },
